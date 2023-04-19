@@ -1,8 +1,29 @@
 ﻿@page
 @model PrivacyModel
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Бронирование";  
 }
-<h1>@ViewData["Title"]</h1>
+<h1 style="align-self:center">@ViewData["Title"]</h1>
+<p style="align-self:center"> Бронирование даты и времени Vr-centr'a</p>
+<form method="post" action="/bron">  
+<div class="container" style=" align-self:center">
+<label for="FIO"> Укажите ФИО </label>
+<input  class="input form-control" id="FIO" type="text"  name="FIO" style="background: #FFFFFF; border-radius: 100px;">
+</div>
+<div class="container" style=" align-self:center">
+<label> Ваш номер телефона </label>
+        <input class="input form-control" type="text" name="num" style="background: #FFFFFF; border-radius: 100px;">
+</div>
+<div class="container" style=" align-self:center">
+<label> Укажите удобный для вас день </label>
+        <input class="input form-control" type="date" name="date" style="background: #FFFFFF; border-radius: 100px;">
+</div>
+<div class="container" style=" align-self:center">
+<label> Укажите удобное для вас время </label>
+        <input class="input form-control" type="time" name="time" style="background: #FFFFFF; border-radius: 100px;">
+</div>
+<div class="container" style=" align-self:center">
+<button type="submit" onclick="Click" />
+</div>
+</form>
 
-<p>Use this page to detail your site's privacy policy.</p>
